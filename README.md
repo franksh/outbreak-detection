@@ -2,7 +2,8 @@
 
 ## Introduction
 
-![Inference Method Illustration](/data/method_illustration.png)
+<!-- ![Inference Method Illustration](/data/method_illustration.png) -->
+<img src="/data/method_illustration.png" width="300">
 
 ## Installation
 
