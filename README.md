@@ -1,9 +1,18 @@
 # Outbreak Detection
 
+This repository contains a Python implementation of the outbreak detection algorithm described in the publication:
+
+> Schlosser, F., Brockmann, D. (2021). Finding Disease Outbreak Locations from Human Mobility Data. (under review)
+
 ## Introduction
 
-<!-- ![Inference Method Illustration](/data/method_illustration.png) -->
-<img src="/data/method_illustration.png" width="600">
+The outbreak detection method is intended to detect the location of _spatially localized_ disease outbreaks, meaning that individuals present at a certain location at a certain time are infected.
+
+The outbreak method is given the spatial trajectory of the infected individuals, for example recorded from smartphone GPS, and aims to infer the outbreak origin from it.
+
+The outbreak origin is estimated at the location where most individuals have been co-located at the same time at one point in the past.
+
+<img src="/data/method_illustration.jpg" width="600">
 
 ## Installation
 

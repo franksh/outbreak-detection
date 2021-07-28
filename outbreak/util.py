@@ -3,9 +3,10 @@ import matplotlib.pyplot as plt
 
 
 def plot_trajectories(traj, ax=None):
-    " Plot some sample trajectories of individuals "
+    " Plot trajectories of individuals "
     if ax is None:
         fig, ax = plt.subplots()
+        fig.patch.set_facecolor('w')
     individuals = traj['ind'].unique()
     for ind in individuals:
         traj_ind = traj.loc[traj['ind'] == ind]
@@ -33,6 +34,7 @@ def plot_result(traj, origins, n_origins=10, ax=None, legend=True):
     """
     if ax is None:
         fig, ax = plt.subplots()
+        fig.patch.set_facecolor('w')
 
     plot_trajectories(traj, ax)
     top_origin = origins.head(1)
